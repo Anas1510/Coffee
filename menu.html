@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Haven — Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Coffee<span>Haven</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+<section class="menu-showcase">
+  <div class="container">
+    <h2 class="section-title">COFFEES</h2>
+
+    <div class="menu-showcase-grid">
+
+      <div class="menu-card">
+        <img src="Vanilla-Latte.webp" alt="Latte">
+        <h3>Vanilla Latte</h3>
+        <p>A smooth blend of espresso, steamed milk & vanilla.</p>
+        <span class="price">₹220</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Cappuccino.webp" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Silky foam, bold espresso & perfect balance.</p>
+        <span class="price">₹200</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="chocolate mocha.webp" alt="Mocha">
+        <h3>Chocolate Mocha</h3>
+        <p>Rich chocolate + espresso + milk = heaven.</p>
+        <span class="price">₹250</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Buttery Croissant.webp" alt="Croissant">
+        <h3>Butter Croissant</h3>
+        <p>Buttery, flaky, freshly baked every morning.</p>
+        <span class="price">₹120</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Espresso.webp" alt="Croissant">
+        <h3>Espresso</h3>
+        <p>Single/double shot, bold and pure.</p>
+        <span class="price">₹120 / ₹160 </span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Americano.webp" alt="Croissant">
+        <h3>Americano</h3>
+        <p>Espresso with hot water.</p>
+        <span class="price">₹150 </span>
+      </div>
+    </div>
+  </div>
+      </section>
+
+      <section class="menu-showcase">
+  <div class="container">
+    <h2 class="section-title">TEA & MORE</h2>
+
+    <div class="menu-showcase-grid">
+
+      <div class="menu-card">
+        <img src="Masala Chai.webp" alt="Croissant">
+        <h3>Masala Chai</h3>
+        <p>Traditional Indian spiced tea</p>
+        <span class="price">₹90</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Herbal Tea.webp" alt="Croissant">
+        <h3>Herbal Tea</h3>
+        <p>Chamomile / Mint / Lemon ginger.</p>
+        <span class="price">₹120</span>
+      </div>
+
+      <div class="menu-card">
+        <img src="Pastries.webp" alt="Croissant">
+        <h3>Pastries</h3>
+        <p>Daily selection — ask staff for details.</p>
+        <span class="price">₹80-180</span>
+      </div>
+
+
+    </div>
+
+
+      <div class="center mt-30"><a class="btn-primary" href="order.html">Order Online</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Coffee Haven</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order Online — Coffee Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Coffee<span>Haven</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="order.html" aria-current="page">Order</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container order-page">
+    <h1>Order Online</h1>
+    <p class="lead">Choose items and place your order for pickup.</p>
+
+    <form class="order-form" action="#" method="POST">
+      <div class="order-grid">
+        <label>
+          <input type="checkbox" name="item" value="latte" />
+          Vanilla Latte — ₹220
+        </label>
+        <label>
+          <input type="checkbox" name="item" value="cappuccino" />
+          Cappuccino — ₹200
+        </label>
+        <label>
+          <input type="checkbox" name="item" value="espresso" />
+          Double Espresso — ₹160
+        </label>
+        <label>
+          <input type="checkbox" name="item" value="croissant" />
+          Buttery Croissant — ₹120
+        </label>
+      </div>
+
+      <div class="field-row">
+        <label>Pickup Name</label>
+        <input type="text" name="pickup_name" required />
+      </div>
+
+      <div class="field-row">
+        <label>Pickup Time</label>
+        <input type="time" name="pickup_time" required />
+      </div>
+
+      <div class="center"><button class="btn-primary" type="submit">Place Order</button></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Coffee Haven </p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

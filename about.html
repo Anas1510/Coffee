@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Haven — About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Coffee<span>Haven</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="order.html">Order</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container about-page">
+    <h1>About Coffee Haven</h1>
+    <p class="lead">We started with a simple idea: coffee can be a gentle ritual that improves the day.</p>
+
+    <section class="two-col">
+      <div>
+        <h3>Our Beans</h3>
+        <p>We partner with small growers and source beans that are traceable and responsibly farmed. Roasted in small batches to highlight unique flavor notes.</p>
+
+        <h3>Community</h3>
+        <p>Local artists, remote workers and friends — our space aims to be welcoming for everyone.</p>
+      </div>
+      <div>
+        <img src="canva-coffee-MAFY5n-lJwE-removebg-preview.png" alt="our shop"/>
+      </div>
+    </section>
+
+    <section class="founder">
+      <h3>Meet the Founder</h3>
+      <p>Started in 2021 by a small team of coffee lovers, Coffee Haven grew from pop-ups to this cozy spot. Our mission remains the same — slow coffee, good conversations.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Coffee Haven</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

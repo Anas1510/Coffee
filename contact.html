@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Coffee Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Coffee<span>Haven</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html" aria-current="page" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us</h1>
+    <p class="lead">Have a question, catering request or feedback? Send us a message.</p>
+
+    <form class="contact-form" action="#" method="POST">
+      <div class="field-row">
+        <label>Name</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="field-row">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="field-row">
+        <label>Message</label>
+        <textarea name="message" rows="6" required></textarea>
+      </div>
+      <div class="center"><button class="btn-primary" type="submit">Send Message</button></div>
+    </form>
+
+    <section class="contact-info">
+      <h3>Visit Us</h3>
+      <p>123 Coffee Lane, Hyderabad • Mon–Sun 7:30am–8:00pm</p>
+      <p>Email: hello@coffeehaven.example • Phone: +91 98765 43210</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Coffee Haven</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

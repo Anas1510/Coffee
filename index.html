@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coffee Haven — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header (shared) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Coffee<span>Haven</span> 🍵</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+        <a href="reserve.html">Reserve</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Soft mornings, warm cups</h1>
+          <p>Slow down, breathe, and enjoy our handcrafted coffees sourced from ethical farms.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="menu.html">View Menu</a>
+            <a class="btn-ghost" href="reserve.html">Book a Table</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="coffee-removebg-preview.png" alt="coffee cup"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights container">
+      <div class="card">
+        <h3>Freshly Roasted</h3>
+        <p>Daily small-batch roasting for maximum flavor.</p>
+      </div>
+      <div class="card">
+        <h3>Cozy Space</h3>
+        <p>Comfortable seating — perfect for work or chats.</p>
+      </div>
+      <div class="card">
+        <h3>Local Treats</h3>
+        <p>Pastries and sandwiches made in-house every morning.</p>
+      </div>
+    </section>
+
+    <!-- Small menu preview -->
+    <section class="menu-preview">
+      <div class="container">
+        <h2>Popular Picks</h2>
+        <div class="menu-cards">
+          <article class="menu-item">
+            <img src="Vanilla-Latte.webp" alt="latte"/>
+            <h4>Vanilla Latte</h4>
+            <p class="price">₹220</p>
+          </article>
+          <article class="menu-item">
+            <img src="Cappuccino.webp" alt="cappuccino"/>
+            <h4>Cappuccino</h4>
+            <p class="price">₹200</p>
+          </article>
+          <article class="menu-item">
+            <img src="Buttery Croissant.webp" alt="croissant"/>
+            <h4>Buttery Croissant</h4>
+            <p class="price">₹120</p>
+          </article>
+        </div>
+        <div class="center"><a class="btn-primary"  href="menu.html">See Full Menu</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (shared) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Coffee Haven </p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
